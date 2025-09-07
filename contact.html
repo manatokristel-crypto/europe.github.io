@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Europe Uncovered</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="banner">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="image/Logo1.png" alt="Logo1">
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <h1>Contact <span>Us</span></h1>
+      <p>Have questions or suggestions? We'd love to hear from you!</p>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p><i class="fa-solid fa-location-dot"></i> Manila, Philippines</p>
+          <p><i class="fa-solid fa-envelope"></i> contact@europeuncovered.com</p>
+          <p><i class="fa-solid fa-phone"></i> +63 951 866 9597</p>
+        </div>
+
+        <form class="contact-form" action="#success" method="get">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      
+      <div class="success-message" id="success">
+        <div class="success-content">
+          <i class="fas fa-check-circle"></i>
+          <h3>Message Sent Successfully!</h3>
+          <p>Thank you for contacting Europe Uncovered. We'll get back to you soon!</p>
+          <a href="#" class="close-success">Close</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="faq-container">
+      <h2>Frequently Asked Questions</h2>
+      <p>Quick answers to common questions about our services</p>
+
+      <div class="faq-grid">
+        <!-- FAQ Item 1 -->
+          <div class="faq-item">
+        <div class="faq-question">
+          <span>What makes Europe Uncovered different from other travel guides?</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="faq-answer">
+          <p>
+           We focus on authentic, insider experiences rather than typical tourist trails. Our team of passionate travelers and culture enthusiasts curate content that helps you experience each European city like a local, with hidden treasures and stories only locals know.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Do you offer personalized itinerary planning?</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="faq-answer">
+          <p>
+           Yes! Our mission is to help travelers discover Europe in the most authentic and inspiring way. We create customized guides and itineraries based on your interests, helping transform every trip into a story worth telling.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What's the best time to visit European destinations?</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="faq-answer">
+          <p>
+           For Western Europe, visit April-June or September-October for pleasant weather and fewer crowds. Southern Europe is ideal March-May and September-November. Northern Europe is best visited June-August for warmer weather.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Can you help with visa requirements?</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="faq-answer">
+          <p>
+            While we can provide general guidance about visa requirements, we recommend consulting with your local embassy or visa service for specific requirements based on your nationality.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How often do you update your destination information?</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="faq-answer">
+          <p>
+            We continuously update our content through partnerships with local guides, travel agencies, and photographers. Our team regularly revisits destinations to ensure recommendations remain current, authentic, and reflect any changes in local attractions or services.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Can you help with first-time Europe travelers?</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="faq-answer">
+          <p>
+             Yes! Our content is perfect for first-timers. We explain cultural etiquette, essential phrases, tipping customs, and must-see landmarks alongside hidden gems. Our "Europe Uncovered" approach ensures you're well-prepared for authentic experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1Bjf2PWLdL/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://t.me/Kristel Manato" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+      <a href="https://www.instagram.com/krxs.tela?igsh=dmt4M2RkNjNjcjA0" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 Europe Uncovered. All rights reserved/For project purposes only.</p>
+  </footer>
+<script>
+
+  const toggleButtons = document.querySelectorAll('.toggle-btn');
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const faqItem = button.closest('.faq-item');
+      const answer = faqItem.querySelector('.faq-answer');
+
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+  
+      button.textContent = answer.style.display === 'block' ? '×' : '+';
+    });
+  });
+</script>
+</body>
+</html>
+
